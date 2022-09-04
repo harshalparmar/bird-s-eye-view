@@ -1,0 +1,23 @@
+:root {
+  --scale: 1.5
+  --y: 0;
+  overflow: hidden;
+}
+:root body {
+  margin: 0;
+  background-color: black;
+  outline: none;
+  border: none;
+}
+:root body #wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+:root body #wrapper #image {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://harshalparmar.github.io/bird-s-eye-view/city.jpeg");
+  background-size: cover;
+  transform: translateX(var(--x)) translateY(var(--y)) scale(var(--scale));
+  transition: ease-out 0.7s;
+}
